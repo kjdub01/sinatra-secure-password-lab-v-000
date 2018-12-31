@@ -2,4 +2,15 @@
 
 <p>We are currently working on your account.</p>
 
+<p>Your balance is <%=  %></p>
+
+<% def deposit(amount) %>
+  @balance += amount
+<% end %>
+
+<% def withdraw(amount) %>
+  @balance -= amount
+<% end %>
+
+
 <p><a href="/logout">Log Out</a></p>
