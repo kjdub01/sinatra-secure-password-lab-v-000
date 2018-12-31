@@ -1,6 +1,10 @@
 class User < ActiveRecord::Base
   has_secure_password
   
+  def inititalize(balance=0)
+    @balance = balance
+  end
+  
   def display_balance
       @balance
   end
