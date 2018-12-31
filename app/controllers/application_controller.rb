@@ -28,7 +28,6 @@ class ApplicationController < Sinatra::Base
 
   get '/account' do
     @user = User.find(session[:user_id])
-    @balance = User.balance
     erb :account
   end
 
